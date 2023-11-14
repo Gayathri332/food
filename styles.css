@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Asap+Condensed:wght@200&family=Cormorant:ital@1&family=Dancing+Script:wght@500&family=Edu+TAS+Beginner&family=Lato:wght@300&family=Merriweather+Sans:wght@500&family=Nanum+Myeongjo&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-image: url("images.jpg");
+  background-size: 1500px;
+  font-family: "lato", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Adjust the opacity level as needed */
+
+  line-height: 1.6;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+#sec1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
+  padding-left: 28px;
+  padding-top: 30px;
+  color: rgb(255, 255, 255);
+  width: 60%;
+}
+nav {
+  background-image: rgb(255, 255, 255);
+  opacity: 100%;
+  text-align: right;
+  top: 0%;
+  height: 80px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 4px;
+  width: 100%;
+  position: fixed;
+}
+nav a:hover {
+  color: rgb(0, 179, 255);
+}
+
+nav a {
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.glowing-text {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+  animation: glow 1s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgb(43, 43, 74), 0 0 20px rgb(255, 139, 139),
+      0 0 30px rgb(121, 221, 255);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(128, 255, 0), 0 0 30px #00f,
+      0 0 40px rgb(255, 0, 183);
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(203, 65, 249), 0 0 20px rgb(255, 159, 33),
+      0 0 30px rgb(255, 255, 0);
+  }
+}
+
+.image-container {
+  display: flex;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.image-item {
+  width: 200px;
+  height: 150px;
+  margin: 0 10px;
+  animation: moveLeftToRight 40s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-800%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(800%);
+  }
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+
+.cont img {
+  justify-self: end;
+
+  margin-right: 10px; /* Add spacing between the image and text */
+}
+
+#sec1 {
+  margin: 0; /* Remove default margins for the paragraph */
+}
+h6 {
+  padding-top: 28px;
+}
